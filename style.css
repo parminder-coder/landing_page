@@ -1,0 +1,237 @@
+body{
+    margin:0;
+    padding:0;    
+}
+
+.logo img{
+    margin-left:100px;
+    margin-top:30px;
+    border-radius:40px;    
+    width:80px;
+}
+
+.header{    
+    box-sizing: border-box;        
+    display:flex;
+    justify-content:space-between;
+    gap:300px;
+    background-color:#1f2937;    
+
+    nav{
+        margin-right:100px;
+        margin-top:20px;
+        box-sizing:border-box;        
+        padding-top:28px;    
+        text-align:center;
+        text-decoration:none;        
+    }
+
+    nav a{
+        font-size:18px;
+        text-decoration:none;
+        margin-right:8px;
+        color:white
+    }
+}
+
+.main{
+    
+    background-color:#1f2937;
+    color:white;
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    padding-bottom:50px;
+
+    .car{
+        img{
+            margin-top:20px;
+            margin-right:30px;
+            margin-bottom:30px;            
+        }
+    }
+
+    .description{        
+        margin-top:30px;  
+
+        h1{
+            font-size:50px
+        }
+
+        p{
+            text-align:center;
+            font-size:20px;
+        } 
+
+        button{
+            display:block;
+            margin:0 auto;
+            margin-bottom:20px;            
+            margin-top:30px;
+            font-size: 1rem;
+            align-items: center;
+            height: 48px;
+            border-radius: 0.4rem;
+            font-weight: 600;
+            padding: 0 1.2rem;
+            color: #ddd;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 0.5rem 1rem rgba(143, 142, 142, 0.15) !important;
+            background: #3882f6;
+        }
+    }        
+}
+
+.features{
+    display:flex;
+    justify-content:space-between;       
+    margin:50px 300px 83.2px 300px;
+    flex-wrap:wrap;
+
+    
+    >:first-child{ 
+        font-size:40px;
+        text-align:center;
+        width:100%;
+    }
+
+    img{
+        width: 300px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        
+    }
+
+    .cards{
+        margin-top:10px;
+        width: 300px;
+        background: white;
+        border-radius: 10px;    
+        box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                0 0  0 2px rgb(190, 190, 190),
+                0.3em 0.3em 1em rgba(0,0,0,0.3);
+    }
+
+    h3{
+        text-align:center;
+    }
+}
+
+.warranty-services{
+    
+    margin-top:40px;
+    padding:50px;
+    
+    display:flex;
+    background-color:whitesmoke;
+    flex-wrap:wrap;
+    justify-content:center;;  
+   
+        
+
+    >:first-child{           
+        width:100%;
+        text-align:center;
+        margin-top:10px;  
+        font-size:40px;  
+        padding-top:20px
+              
+    }
+
+    .maintenance,
+    .warranties,
+    .repair{
+        margin-right:180px;
+        width:300px; 
+
+        >:first-child{           
+            font-size:20px;
+        }
+        
+        p{
+            font-size:18px;
+        }
+    }
+}
+
+.specifications{
+    margin-top:40px;
+    margin-bottom:40px;
+    >:first-child{           
+        width:100%;
+        text-align:center;
+        margin-top:10px;  
+        font-size:40px;  
+        padding-top:20px;              
+    }
+
+    ul{
+        list-style-type:none;
+        display:grid;
+        margin:0 320px auto;
+        grid-template-columns: 1fr 1fr 0.8fr 1fr;
+        
+        li>*{
+            margin-bottom:0;
+        }
+        
+        li{
+            display:grid;
+            height:100px;
+            margin-top:20px;
+            text-align: center; 
+            place-self: center stretch;
+            border-right:2px solid lightgray;
+            
+
+            .content>*{
+                margin:0;
+            }
+
+            .content{
+                
+                display:flex;       
+                justify-content:center;     
+                gap:3px;
+                align-items:end;
+                flex-wrap:wrap;
+
+                .focus{
+                    font-weight:bolder;
+                    font-size:25px;
+
+                    sub{
+                        font-weight: 100;
+                        font-size: 16px;
+                    }
+                }
+                
+            }
+
+            .title{
+                color:rgb(99, 99, 99);
+            }
+
+        }
+
+        >:nth-child(4n){
+            border:none;
+        }
+        
+
+        
+    }
+}
+
+.footer{
+    p{
+        margin:0;
+        padding:0;
+    }
+    text-align:center;
+    background-color:#1f2937;
+    color:white;
+    padding:20px;
+}
+
